@@ -142,7 +142,7 @@ def scraper():
 			savePath = 'C:/Users/lenovo/Downloads/' + folder 
 			cityName = str(cityNameDict.get(counter))
 			completeName = os.path.join(savePath, cityName+".txt")  
-			cityFile = open(completeName, "w")       
+			cityFile = open(completeName, "w", encoding='utf-8')       
 			toFile = str(pageData)
 			cityFile.write(toFile)
 			cityFile.close()
@@ -183,7 +183,7 @@ def scraper():
 			savePath = 'C:/Users/lenovo/Downloads/' + folder 
 			cityName = str(cityNameDict.get(counter))
 			completeName = os.path.join(savePath, cityName+".txt")  
-			cityFile = open(completeName, "w")       
+			cityFile = open(completeName, "w", encoding='utf-8')       
 			toFile = str(pageData)
 			cityFile.write(toFile)
 			cityFile.close()
